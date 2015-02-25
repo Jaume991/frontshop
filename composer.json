@@ -6,7 +6,9 @@
 	"type": "project",
 	"require": {
 		"laravel/framework": "4.2.*",
-		"sorskod/larasponse": "~1.0"
+		"sorskod/larasponse": "~1.0",
+		"laracasts/validation": "~1.0",
+		"nicolaslopezj/searchable": "1.*"
 	},
 	"autoload": {
 		"classmap": [
@@ -16,7 +18,10 @@
 			"app/database/migrations",
 			"app/database/seeds",
 			"app/tests/TestCase.php"
-		]
+		],
+		"psr-4": {
+		  "FrontShop\\": "app/"
+		}
 	},
 	"scripts": {
 		"post-install-cmd": [
